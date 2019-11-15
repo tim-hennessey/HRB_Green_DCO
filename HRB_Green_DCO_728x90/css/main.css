@@ -1,0 +1,129 @@
+/*#border,
+ft-default {
+	height: 90px;
+	width: 728px;
+}*/
+
+.default,
+ft-default #text-container {
+	top: 0;
+	left: 0;
+	position: absolute;
+}
+
+@font-face {
+    font-family: 'Graphik App';
+    src: url('../fonts/subset-GraphikApp-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Graphik App';
+    src: url('../fonts/subset-GraphikApp-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+body {
+	background: #fafafa;
+	color: #fff;
+}
+
+#border {
+	height: 90px;
+	width: 728px;
+	display: block;
+	pointer-events: none;
+	outline: #000 solid 1px;
+	outline-offset: -1px;
+	z-index: 999;
+	position: absolute;
+}
+
+ft-default {
+	height: 90px;
+	width: 728px;
+	background: #14AA40;
+	overflow: hidden;
+	opacity: 0;
+}
+
+ft-default #button-exit {
+	background-color: rgba(255, 255, 255, 0);
+	cursor: pointer;
+	height: 100%;
+	width: 100%;
+}
+
+ft-default #footer {
+	background-color: #fff;
+	height: 100%;
+	width: 90px;
+	bottom: 0;
+	position: absolute;
+}
+
+ft-default #footer #logo {
+	position: absolute;
+	width: 70px;
+	bottom: 10px;
+	left: 10px;
+}
+
+ft-default #cta {
+	position: absolute;
+	width: 120px;
+	height: 30px;
+	bottom: 30px;
+	right: 20px;
+	background-color: #f5cc02;
+}
+
+ft-default #cta ft-dynamic[name=dynamicCTA] {
+	width: 120px;
+	height: 30px;
+	margin-top: 1px;
+	position: absolute;
+
+	text-align: center;
+	color: #262626;
+	font-family: 'Graphik App';
+    font-weight: 600;
+    font-style: normal;
+    font-size: 13px;
+	font-kerning: auto;
+	-webkit-font-kerning: auto;
+	-webkit-font-smoothing: antialiased; /* This needs to be set or some font faced fonts look bold on Mac in Chrome/Webkit based browsers. */
+	-moz-osx-font-smoothing: grayscale; /* Fixes font bold issue in Firefox version 25+ on Mac */
+	line-height: 30px;	
+}
+
+ft-default #text-container {
+	left: 110px;
+	width: 440px;
+	height: 90px;
+	position: absolute;
+}
+
+ft-default #text-container ft-dynamic[name=dynamicText] {
+	/*margin-left: 20px;
+	margin-right: 20px;*/
+	top: 50%;
+	transform: translate(0, -50%);
+	color: #fff;
+	position: absolute;
+
+	font-family: 'Graphik App';
+	font-weight: bold;
+	font-style: normal;
+	font-size: 27px;
+	line-height: 1.1em;
+	letter-spacing: -.02em;
+	-webkit-font-smoothing: antialiased; /* This needs to be set or some font faced fonts look bold on Mac in Chrome/Webkit based browsers. */
+	-moz-osx-font-smoothing: grayscale; /* Fixes font bold issue in Firefox version 25+ on Mac */
+	
+}
+
+
+

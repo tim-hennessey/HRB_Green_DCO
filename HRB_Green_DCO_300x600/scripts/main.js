@@ -5,6 +5,7 @@
 	var cta = document.getElementById('cta');
 	var textEl = document.getElementById('text-plugin');
 	var ctaEl = document.getElementById('cta_txt');
+	var logo = document.getElementById('logo');
 
 	var textStr = "";
 	var t = TweenMax;
@@ -33,6 +34,7 @@
 
 	// --------------------------------------------------------------------------------------
 	function start() {
+		// t.set(logo, {force3D:false});
 		t.set(banner, {opacity:1});
 		
 		var mySplitText = new SplitText(textEl, {type:"lines"});

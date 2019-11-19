@@ -8,6 +8,7 @@ ft-default {
 ft-default #text-container {
 	top: 0;
 	left: 0;
+	transform: translateZ(0);
 	position: absolute;
 }
 
@@ -27,7 +28,7 @@ ft-default #text-container {
 
 body {
 	background: #fafafa;
-	color: #fff
+	color: #fff;
 }
 
 /*#border {
@@ -46,14 +47,14 @@ ft-default {
 	width: 300px;
 	background: #14AA40;
 	overflow: hidden;
-	opacity: 0
+	opacity: 0;
 }
 
 ft-default #button-exit {
 	background-color: rgba(255, 255, 255, 0);
 	cursor: pointer;
 	height: 100%;
-	width: 100%
+	width: 100%;
 }
 
 ft-default #footer {
@@ -61,14 +62,16 @@ ft-default #footer {
 	height: 115px;
 	width: 300px;
 	bottom: 0;
-	position: absolute
+	position: absolute;
 }
 
 ft-default #footer #logo {
 	position: absolute;
+	height: 75px;
 	width: 75px;
 	bottom: 20px;
-	left: 20px
+	left: 20px;
+	/*transform: translateZ(0);*/
 }
 
 ft-default #footer #cta {
@@ -77,7 +80,7 @@ ft-default #footer #cta {
 	height: 35px;
 	bottom: 40px;
 	right: 20px;
-	background-color: #f5cc02
+	background-color: #f5cc02;
 }
 
 ft-default #footer #cta ft-dynamic[name=dynamicCTA] {
@@ -104,7 +107,7 @@ ft-default #footer #cta ft-dynamic[name=dynamicCTA] {
 
 ft-default #text-container {
 	width: 300px;
-	height: 485px
+	height: 485px;
 }
 
 ft-default #text-container ft-dynamic[name=dynamicText] {

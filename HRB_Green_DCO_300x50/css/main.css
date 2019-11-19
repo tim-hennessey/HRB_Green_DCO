@@ -22,7 +22,7 @@ body {
 	color: #fff;
 }
 
-#border {
+/*#border {
 	height: 50px;
 	width: 300px;
 	display: block;
@@ -31,7 +31,7 @@ body {
 	outline-offset: -1px;
 	z-index: 999;
 	position: absolute;
-}
+}*/
 
 ft-default {
 	height: 50px;

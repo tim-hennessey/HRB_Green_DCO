@@ -8,6 +8,7 @@ ft-default {
 ft-default #text-container {
 	top: 0;
 	left: 0;
+	/*z-index: 998;*/
 	position: absolute;
 }
 
@@ -30,7 +31,9 @@ body {
 	color: #fff;
 }
 
-#border {
+/*#border {
+	top: 0;
+	left: 0;
 	height: 90px;
 	width: 728px;
 	display: block;
@@ -39,7 +42,7 @@ body {
 	outline-offset: -1px;
 	z-index: 999;
 	position: absolute;
-}
+}*/
 
 ft-default {
 	height: 90px;

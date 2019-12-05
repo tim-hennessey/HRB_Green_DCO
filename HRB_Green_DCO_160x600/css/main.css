@@ -30,16 +30,13 @@ body {
 	color: #fff
 }
 
-/*#border {
+#border {
 	height: 600px;
 	width: 160px;
-	display: block;
-	pointer-events: none;
-	outline: #000 solid 1px;
-	outline-offset: -1px;
-	z-index: 999;
+	border:1px solid #000;
+	box-sizing: border-box;
 	position: absolute;
-}*/
+}
 
 ft-default {
 	height: 600px;

@@ -17,6 +17,9 @@
 		textPlugin[0].innerHTML=myFT.instantAds.dynamicText;
 		textPlugin[0].style.fontSize=myFT.instantAds.fontSize;
 
+		var dynamicCT = myFT.instantAds.dynamicURL;
+		myFT.applyClickTag(banner, 1, dynamicCT);
+
 	});
 
 	
@@ -25,7 +28,7 @@
 	function start() {
 		t.set(banner, {opacity:1});
 		
-		var mySplitText = new SplitText(textEl, {type:"lines"});
+		// var mySplitText = new SplitText(textEl, {type:"lines"});
 
 		// tl1.staggerFrom(mySplitText.lines, .8, {delay:.5, y:"-=25", ease: Sine.easeOut}, .4);
 		// tl2.staggerFrom(mySplitText.lines, .2, {delay:.7, opacity:0}, .4);

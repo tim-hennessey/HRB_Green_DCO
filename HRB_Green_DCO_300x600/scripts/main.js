@@ -18,7 +18,10 @@
 		
 		var textPlugin=myFT.$("#text-plugin");
 		textPlugin[0].innerHTML=myFT.instantAds.dynamicText;
-		textPlugin[0].style.fontSize=myFT.instantAds.fontSize
+		textPlugin[0].style.fontSize=myFT.instantAds.fontSize;
+
+		var dynamicCT = myFT.instantAds.dynamicURL;
+		myFT.applyClickTag(banner, 1, dynamicCT);
 
 	});
 
@@ -34,7 +37,6 @@
 
 	// --------------------------------------------------------------------------------------
 	function start() {
-		// t.set(logo, {force3D:false});
 		t.set(banner, {opacity:1});
 		
 		var mySplitText = new SplitText(textEl, {type:"lines"});

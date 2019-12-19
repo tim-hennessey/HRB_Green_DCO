@@ -10,6 +10,7 @@
 	var t = TweenMax;
 	var tl1 = new TimelineMax();
 	var tl2 = new TimelineMax();
+	var travel = -24;
 
 	textEl.innerHTML = textStr;
 
@@ -40,7 +41,7 @@
 		
 		var mySplitText = new SplitText(textEl, {type:"lines"});
 
-		tl1.staggerFrom(mySplitText.lines, .8, {delay:.5, y:"-=50", ease: Sine.easeOut}, .4);
+		tl1.staggerFrom(mySplitText.lines, .8, {delay:.5, y:travel, ease: Sine.easeOut}, .4);
 		tl2.staggerFrom(mySplitText.lines, .2, {delay:.7, opacity:0}, .4);
 	}
 
